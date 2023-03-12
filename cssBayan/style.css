@@ -4,15 +4,33 @@ body{
     line-height: 1.5;
     background-color: bisque;
 }
-.accardion{
+.accordion{
     max-width: 500px;
     margin: 20px auto;
 }
-.accardion-item{
-    border: 1px solid rgb(116, 85, 226);
+.accordion-tittle{
+    display: block;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+}
+.accordion-tittle:hover{
+    color: blue;
+}
+.accordion-item{
+    border: 1px solid rgb(2, 2, 2);
 
 }
-.accardion-img{
+.accordion-img{
     display: none;
-    
+    width: 300px;
+}
+.accordion-input{
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.accordion-input:checked + .accordion-img{
+    display: block;
 }
